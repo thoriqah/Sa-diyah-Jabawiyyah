@@ -1,185 +1,433 @@
-🫣<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thoriqoh Sa'diyah </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thariqah Sa’diyah</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f7f6;
-      color: #222;
-      line-height: 1.6;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    header {
-      background: #146b45;
-      color: white;
-      padding: 25px 20px;
-      text-align: center;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7f6;
+  color: #222;
+  line-height: 1.7;
+}
 
-    header h1 {
-      font-size: 28px;
-      margin-bottom: 5px;
-    }
+header {
+  background: #146b45;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
 
-    header p {
-      font-size: 15px;
-    }
+header h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
 
-    nav {
-      background: white;
-      padding: 12px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
+header p {
+  font-size: 16px;
+}
 
-    nav a {
-      color: #146b45;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
+nav {
+  background: white;
+  padding: 14px 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 
-    .hero {
-      background: white;
-      margin: 20px auto;
-      padding: 35px 20px;
-      max-width: 900px;
-      text-align: center;
-      border-radius: 15px;
-    }
+nav a {
+  display: inline-block;
+  color: #146b45;
+  text-decoration: none;
+  margin: 5px 8px;
+  font-weight: bold;
+}
 
-    .hero h2 {
-      color: #146b45;
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
+nav a:hover {
+  text-decoration: underline;
+}
 
-    .hero p {
-      color: #555;
-    }
+.hero {
+  background: white;
+  max-width: 950px;
+  margin: 25px auto;
+  padding: 45px 25px;
+  text-align: center;
+  border-radius: 15px;
+}
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 10px 20px 40px;
-    }
+.hero h2 {
+  color: #146b45;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
 
-    .card {
-      background: white;
-      padding: 25px;
-      margin: 20px 0;
-      border-radius: 15px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.07);
-    }
+.hero p {
+  color: #555;
+}
 
-    .card h2 {
-      color: #146b45;
-      margin-bottom: 12px;
-    }
+.container {
+  max-width: 950px;
+  margin: auto;
+  padding: 0 15px 30px;
+}
 
-    .button {
-      display: inline-block;
-      background: #146b45;
-      color: white;
-      padding: 10px 20px;
-      margin-top: 15px;
-      border-radius: 8px;
-      text-decoration: none;
-    }
+.card {
+  background: white;
+  margin: 20px 0;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
 
-    footer {
-      background: #146b45;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 20px;
-    }
+.card h2 {
+  color: #146b45;
+  margin-bottom: 15px;
+}
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 23px;
-      }
+.card h3 {
+  color: #146b45;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
 
-      nav a {
-        display: inline-block;
-        margin: 5px;
-      }
-    }
-  </style>
+.card p {
+  margin-bottom: 12px;
+}
+
+.card ul {
+  padding-left: 22px;
+  margin-bottom: 12px;
+}
+
+.highlight {
+  border-left: 5px solid #146b45;
+  padding-left: 15px;
+  margin: 15px 0;
+}
+
+.contact {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  background: #146b45;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+footer {
+  background: #146b45;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  .hero h2 {
+    font-size: 23px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  nav a {
+    margin: 4px 5px;
+    font-size: 14px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Thoriqoh Sa'diyah Sa</h1>
-    <p>Selamat Datang di Website Resmi</p>
-  </header>
+<header>
+  <h1>Thariqah Sa’diyah</h1>
+  <p>Thariqah Sa’diyah Al-‘Aliyah</p>
+  <p>Majelis Al-Imdad</p>
+</header>
 
-  <nav>
-    <a href="#beranda">Beranda</a>
-    <a href="#tentang">Tentang</a>
-    <a href="#kegiatan">Kegiatan</a>
-    <a href="#kontak">Kontak</a>
-  </nav>
+<nav>
+  <a href="#profil">Profil</a>
+  <a href="#sejarah">Sejarah</a>
+  <a href="#biografi">Biografi</a>
+  <a href="#guru">Guru</a>
+  <a href="#ajaran">Ajaran</a>
+  <a href="#kegiatan">Kegiatan</a>
+  <a href="#kontak">Kontak</a>
+</nav>
 
-  <section class="hero" id="beranda">
-    <h2>Assalamu'alaikum Warahmatullahi Wabarakatuh</h2>
-    <p>
-      Selamat datang di website Thoriqoh Sa'diyah Sa.
-      Semoga menjadi sarana informasi, silaturahmi,
-      dan kemanfaatan bagi umat.
-    </p>
-  </section>
+<section class="hero">
+  <h2>Selamat Datang</h2>
+  <p>
+    Website resmi informasi Thariqah Sa’diyah sebagai media
+    pengenalan, pembelajaran, silaturahmi, dan khidmah.
+  </p>
+</section>
 
-  <main class="container">
+<main class="container">
 
-    <section class="card" id="tentang">
-      <h2>Tentang Kami</h2>
-      <p>
-        Thoriqoh Sa'diyah Sa merupakan wadah untuk
-        menyebarkan nilai-nilai keislaman, mempererat
-        silaturahmi, serta meningkatkan amal dan
-        pengabdian kepada masyarakat.
-      </p>
-    </section>
+<section class="card" id="profil">
+  <h2>Profil Thariqah Sa’diyah</h2>
 
-    <section class="card" id="kegiatan">
-      <h2>Kegiatan</h2>
-      <p>
-        Informasi kegiatan, pengajian, majelis,
-        pendidikan, sosial, dan kegiatan keagamaan
-        akan ditampilkan di halaman ini.
-      </p>
-    </section>
+  <p>
+    Thariqah Sa’diyah Al-‘Aliyah merupakan jalan pendidikan
+    spiritual yang menekankan keseimbangan antara Al-Qur’an,
+    Sunnah, ilmu, dzikir, amal, akhlak, suluk, dan khidmah.
+  </p>
 
-    <section class="card" id="kontak">
-      <h2>Kontak</h2>
-      <p>
-        Untuk informasi lebih lanjut dan komunikasi,
-        silakan hubungi pengurus Thoriqoh Sa'diyah Sa.
-      </p>
+  <p>
+    Thariqah ini dinisbatkan kepada Syekh Sa’duddin Al-Jabawiy
+    Al-Syaibani Al-Hasani.
+  </p>
 
-      <a class="button"href="https://wa.me/6281256128634">
-        Hubungi Kami
-      </a>
-    </section>
+  <div class="highlight">
+    <strong>Nama:</strong> Thariqah Sa’diyah<br>
+    <strong>Nama lengkap:</strong> Thariqah Sa’diyah Al-‘Aliyah
+  </div>
+</section>
 
-  </main>
+<section class="card" id="sejarah">
+  <h2>Sejarah Thariqah Sa’diyah</h2>
 
-  <footer>
-    <p>&copy; 2026 Thoriqoh Sa'diyah Sa</p>
-    <p>Semoga bermanfaat bagi umat.</p>
-  </footer>
+  <p>
+    Sejarah Thariqah Sa’diyah berkaitan erat dengan perjalanan
+    dakwah dan pendidikan ruhani Syekh Sa’duddin Al-Jabawiy
+    Al-Syaibani Al-Hasani.
+  </p>
+
+  <p>
+    Dalam perjalanan menuntut ilmu, beliau melakukan perjalanan
+    ke berbagai wilayah, di antaranya Yaman, Mesir, Afrika Utara,
+    Syam, Baitul Maqdis, dan Irak.
+  </p>
+
+  <p>
+    Perjalanan tersebut menjadi bagian dari proses keilmuan,
+    pembentukan akhlak, dan pengembangan suluk beliau.
+  </p>
+
+  <p>
+    Jaba di wilayah Syam kemudian dikenal sebagai salah satu
+    tempat yang berkaitan dengan perjalanan dan perkembangan
+    Thariqah Sa’diyah.
+  </p>
+</section>
+
+<section class="card" id="biografi">
+  <h2>Biografi Syekh Sa’duddin Al-Jabawi</h2>
+
+  <p>
+    Syekh Sa’duddin Al-Jabawiy Al-Syaibani Al-Hasani merupakan
+    tokoh yang menjadi nisbah utama Thariqah Sa’diyah.
+  </p>
+
+  <p>
+    Beliau dilahirkan di Makkah pada tahun 460 H.
+    Sejak masa awal kehidupannya beliau mendapatkan pendidikan
+    keilmuan dan ruhani dari lingkungan ulama.
+  </p>
+
+  <p>
+    Dalam perjalanan kehidupannya, beliau menempuh perjalanan
+    ke berbagai negeri untuk menuntut ilmu dan bertemu dengan
+    para ulama serta orang-orang saleh.
+  </p>
+
+  <p>
+    Perjalanan tersebut meliputi Yaman, Mesir, Afrika Utara,
+    Syam, Baitul Maqdis, dan Irak.
+  </p>
+
+  <p>
+    Syekh Sa’duddin dikenal melalui perhatian terhadap ilmu,
+    dzikir, amal, akhlak, suluk, serta pengabdian kepada umat.
+  </p>
+
+  <div class="highlight">
+    <strong>Nama:</strong> Syekh Sa’duddin Al-Jabawiy
+    Al-Syaibani Al-Hasani<br>
+    <strong>Tempat lahir:</strong> Makkah<br>
+    <strong>Tahun lahir:</strong> 460 H<br>
+    <strong>Tahun wafat:</strong> 575 H
+  </div>
+</section>
+
+<section class="card" id="guru">
+  <h2>Guru Syekh Sa’duddin Al-Jabawi</h2>
+
+  <p>
+    Guru utama Syekh Sa’duddin Al-Jabawi adalah ayah beliau sendiri,
+    yaitu Syekh Yunus Al-Syaibani Al-Makki Al-Hasani.
+  </p>
+
+  <p>
+    Dari ayahnya beliau memperoleh pendidikan dalam berbagai
+    bidang keilmuan, termasuk Al-Qur’an, hadis, fikih, tauhid,
+    dan tasawuf.
+  </p>
+
+  <p>
+    Selain belajar kepada ayahnya, beliau juga menimba ilmu
+    dari para ulama dan orang-orang saleh yang ditemuinya dalam
+    perjalanan ke berbagai wilayah.
+  </p>
+
+  <p>
+    Nama-nama seluruh guru lainnya tidak dicantumkan secara
+    lengkap dalam materi yang tersedia, sehingga bagian ini
+    tidak menambahkan nama yang belum memiliki keterangan sumber.
+  </p>
+</section>
+
+<section class="card" id="ajaran">
+  <h2>Ajaran dan Jalan Suluk</h2>
+
+  <p>
+    Thariqah Sa’diyah menekankan perjalanan ruhani yang tetap
+    berlandaskan Al-Qur’an dan Sunnah.
+  </p>
+
+  <ul>
+    <li>Memperkuat hubungan dengan Allah melalui dzikir.</li>
+    <li>Menuntut ilmu dan mengamalkannya.</li>
+    <li>Membentuk akhlak yang baik.</li>
+    <li>Membersihkan jiwa melalui suluk.</li>
+    <li>Menjaga amal ibadah.</li>
+    <li>Meningkatkan kepedulian dan khidmah kepada umat.</li>
+  </ul>
+
+  <p>
+    Tujuan pendidikan thariqah adalah membentuk pribadi yang
+    berilmu, beramal, berakhlak, dan dekat kepada Allah.
+  </p>
+</section>
+
+<section class="card">
+  <h2>Dzikir dan Wirid</h2>
+
+  <p>
+    Dzikir merupakan bagian penting dalam perjalanan ruhani.
+    Pelaksanaan dzikir dan wirid mengikuti tuntunan serta
+    pengajaran yang diberikan melalui jalur thariqah.
+  </p>
+
+  <p>
+    Rincian bacaan, tata cara, dan sanad dzikir dapat ditambahkan
+    pada bagian ini sesuai materi resmi yang digunakan oleh
+    Thariqah Sa’diyah.
+  </p>
+</section>
+
+<section class="card">
+  <h2>Sanad dan Khirqah</h2>
+
+  <p>
+    Sanad dan khirqah merupakan bagian penting dalam tradisi
+    thariqah sebagai penghubung ajaran dan bimbingan ruhani
+    dari guru kepada murid.
+  </p>
+
+  <p>
+    Rincian sanad akan ditampilkan sesuai data sanad yang telah
+    disahkan dan digunakan oleh Thariqah Sa’diyah.
+  </p>
+</section>
+
+<section class="card">
+  <h2>Karya dan Pelajaran</h2>
+
+  <p>
+    Bagian ini disediakan untuk memuat kitab, karya, pelajaran,
+    doa, hizib, serta materi keilmuan yang berkaitan dengan
+    Thariqah Sa’diyah.
+  </p>
+
+  <p>
+    Materi akan ditambahkan berdasarkan sumber yang digunakan
+    oleh majelis dan tidak mencantumkan karya yang belum memiliki
+    keterangan yang jelas.
+  </p>
+</section>
+
+<section class="card" id="kegiatan">
+  <h2>Kegiatan</h2>
+
+  <p>
+    Website ini menjadi media informasi mengenai kegiatan
+    Thariqah Sa’diyah dan Majelis Al-Imdad.
+  </p>
+
+  <ul>
+    <li>Pengajian</li>
+    <li>Majelis dzikir</li>
+    <li>Pendidikan keagamaan</li>
+    <li>Sosial dan khidmah</li>
+    <li>Kegiatan keagamaan lainnya</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Galeri</h2>
+
+  <p>
+    Dokumentasi kegiatan, foto guru, majelis, dan kegiatan
+    Thariqah Sa’diyah dapat ditambahkan di bagian ini.
+  </p>
+</section>
+
+<section class="card contact" id="kontak">
+  <h2>Kontak</h2>
+
+  <p>
+    Untuk informasi lebih lanjut dan komunikasi,
+    silakan menghubungi Majelis Al-Imdad.
+  </p>
+
+  <a class="button" href="https://wa.me/6281256128634">
+    Hubungi Kami melalui WhatsApp
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Thariqah Sa’diyah</p>
+  <p>Majelis Al-Imdad</p>
+  <p>Semoga bermanfaat bagi umat.</p>
+</footer>
 
 </body>
 </html>
